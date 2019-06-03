@@ -1,0 +1,167 @@
+@charset "UTF-8";
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,600);
+
+
+body {
+    font-family:"Open Sans", Helvetica, Arial, sans-serif;
+    font-weight:300;
+    font-size: 12px;
+    line-height:30px;
+    color: #228B22;
+    background:#228B22;
+
+  }
+
+
+
+.aboveline{background:#228B22;
+color: white;;
+text-align: center;
+align: left;
+
+
+}
+.jumbotron{background:white;
+color: #228B22;
+text-align: center;
+ border-style: solid;
+  border-width: 4px;
+
+
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+body {
+  font-family: 'lato', sans-serif;
+}
+.container {
+  width: 1200px;
+  padding-left: 10px;
+  padding-right: 10px;
+
+}
+
+table {
+  border-spacing: 0;
+  width: 100%;
+  height:10%;
+}
+
+
+
+#myTable tr {
+    border-radius: 3px;
+    padding: 10px 10px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+  background-color: #ffffff;
+    box-shadow: 0px 0px 9px 0px rgba(0,0,0,0.1);
+  }
+
+ #myTable tr.head {
+
+     padding: 10px 10px;
+     display: flex;
+     justify-content: space-between;
+     margin-bottom: 15px;
+   background-color: #228B22;
+
+   }
+
+
+
+#myTable tr:nth-child(even) {background-color: #e0e0e0;
+    color: #228B22;
+    }
+
+   #myTable tr:hover {background-color: #155615;
+   color: white;
+   }
+
+
+   #myTable th {
+    background-color: #228B22;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    color:white;
+  }
+
+    .td1 {
+      flex-basis: 30%;
+    }
+    .td2 {
+      flex-basis: 40%;
+    }
+    .td3 {
+      flex-basis: 15%;
+    }
+    .td4 {
+      flex-basis: 15%;
+    }
+
+th, td {
+  text-align: left;
+  padding: 16px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+    .th1 {
+    flex-basis: 30%;
+    cursor: pointer;
+
+  }
+  .th2 {
+    flex-basis: 40%;
+    cursor: pointer;
+  }
+  .th3 {
+    flex-basis: 15%;
+    cursor: pointer;
+  }
+  .th4 {
+    flex-basis: 15%;
+    cursor: pointer;
+  }
+
+  @media all and (max-width: 767px) {
+    .table-header {
+      display: none;
+    }
+
+    #myTable tr {
+      display: block;
+
+      flex-basis: 100%;
+
+    }
+    #myTable tr {
+      display: flex;
+      padding: 10px 0;
+      &:before {
+        color: #6C7A89;
+        padding-right: 10px;
+        content: attr(data-label);
+        flex-basis: 50%;
+        text-align: right;
+      }
+    }
+
+  }
