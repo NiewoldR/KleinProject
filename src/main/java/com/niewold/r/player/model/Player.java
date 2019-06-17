@@ -14,6 +14,12 @@ public class Player {
     int id;
     String name;
     String email;
+    String playerpass;
+    String positionOffense;
+    String positionDefense;
+    String positionSpecial;
+
+
     public Player() {
     }
 
@@ -21,6 +27,10 @@ public class Player {
         this.id = id;
         this.email = email;
         this.name = name;
+        this.playerpass = playerpass;
+        this.positionOffense = positionOffense;
+        this.positionDefense = positionDefense;
+        this.positionSpecial = positionSpecial;
     }
 
     public int getId() {
@@ -47,9 +57,49 @@ public class Player {
         this.name = name;
     }
 
+    public String getPlayerpass() {
+        return playerpass;
+    }
+
+    public void setPlayerpass(String playerpass) {
+        this.playerpass = playerpass;
+    }
+
+    public String getPositionOffense() {
+        return positionOffense;
+    }
+
+    public void setPositionOffense(String positionOffense) {
+        this.positionOffense = positionOffense;
+    }
+
+    public String getPositionDefense() {
+        return positionDefense;
+    }
+
+    public void setPositionDefense(String positionDefense) {
+        this.positionDefense = positionDefense;
+    }
+
+    public String getPositionSpecial() {
+        return positionSpecial;
+    }
+
+    public void setPositionSpecial(String positionSpecial) {
+        this.positionSpecial = positionSpecial;
+    }
+
     @Override
     public String toString() {
-        return "[Player: [" + "id: " + id + ", " + "email: " + email + "naam" + name + "]";
+        return "Player{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", email='" + email + '\'' +
+                ", playerpass='" + playerpass + '\'' +
+                ", positionOffense='" + positionOffense + '\'' +
+                ", positionDefense='" + positionDefense + '\'' +
+                ", positionSpecial='" + positionSpecial + '\'' +
+                '}';
     }
 }
 
