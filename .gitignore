@@ -28,3 +28,5 @@
 ## ignore for Spring Boot (ignore application.properties in src/main/resources/config since that is now per developer and possibly per environment
 src/main/resources/config/*
 !src/main/resources/config/application.properties.example
+
+application.properties
