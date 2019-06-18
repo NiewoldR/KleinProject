@@ -6,15 +6,13 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="americanfootball" />
         <module name="NAW" />
         <module name="springboot" />
       </profile>
     </annotationProcessing>
-  </component>
-  <component name="JavacSettings">
-    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="NAW" options="-parameters" />
-      <module name="springboot" options="-parameters" />
-    </option>
+    <bytecodeTargetLevel>
+      <module name="americanfootball" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
 </project>
